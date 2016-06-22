@@ -1,0 +1,18 @@
+this enableSimulation false;  
+this allowDamage false;  
+this addAction["UN Items",life_fnc_virt_menu,"cop"];  
+this addAction["UN Clothing",life_fnc_clothingMenu,"un"];  
+this addAction["UN Basic",life_fnc_weaponShopMenu,"cop_basic"];  
+this addAction["UN Private Weapons",life_fnc_weaponShopMenu,"un_private"];   
+this addAction["UN Corporal Weapons",life_fnc_weaponShopMenu,"un_corporal"];
+this addAction["UN Sergeant Weapons",life_fnc_weaponShopMenu,"un_sergeant"];
+this addAction["UN Master Sergeant Weapons",life_fnc_weaponShopMenu,"un_msergeant"];
+this addAction["UN 2nd Lieutenant Weapons",life_fnc_weaponShopMenu,"un_2lie"];
+this addAction["UN 1st Lieutenant Weapons",life_fnc_weaponShopMenu,"un_1lie"];
+this addAction["UN Captain Weapons",life_fnc_weaponShopMenu,"un_captain"];
+this addAction["UN Major Weapons",life_fnc_weaponShopMenu,"un_major"];
+this addAction["UN Colonel Weapons",life_fnc_weaponShopMenu,"un_colonel"];
+this addAction["UN General Weapons",life_fnc_weaponShopMenu,"un_general"];
+this addAction[format["%1 ($%2)",localize (getText(missionConfigFile >> "Licenses" >> "cAir" >> "displayName")),[(getNumber(missionConfigFile >> "Licenses" >> "cAir" >> "price"))] call life_fnc_numberText],life_fnc_buyLicense,"cAir",0,false,false,"",' !license_cop_cAir && playerSide == west '];  
+this addAction[format["%1 ($%2)",localize (getText(missionConfigFile >> "Licenses" >> "cg" >> "displayName")), [(getNumber(missionConfigFile >> "Licenses" >> "cg" >> "price"))] call life_fnc_numberText],life_fnc_buyLicense,"cg",0,false,false,"",' !license_cop_cg && playerSide == west ']; 
+this setVariable["realname","UN Supplies"]; 

@@ -1,0 +1,16 @@
+get id/menu - 1
+admin message - 1
+spectate - 2
+teleport - 3
+compensate - 3
+godmode - 3
+freeze - 3
+tphere - 4
+markers - 4
+debug - 5
+
+1 - support
+2 - mod
+3 - admin
+4 - head admin
+5 - Head of Staff

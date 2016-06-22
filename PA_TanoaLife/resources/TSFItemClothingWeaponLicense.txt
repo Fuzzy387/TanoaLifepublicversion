@@ -1,0 +1,14 @@
+this enableSimulation false;  
+this allowDamage false;  
+this addAction["TSF Items",life_fnc_virt_menu,"cop"];  
+this addAction["TSF Clothing",life_fnc_clothingMenu,"tsf"];  
+this addAction["TSF Basic",life_fnc_weaponShopMenu,"cop_basic"];  
+this addAction["TSF Private Weapons",life_fnc_weaponShopMenu,"tsf_private"];   
+this addAction["TSF Corporal Weapons",life_fnc_weaponShopMenu,"tsf_corporal"];
+this addAction["TSF Sergeant Weapons",life_fnc_weaponShopMenu,"tsf_sergeant"];
+this addAction["TSF 2nd Lieutenant Weapons",life_fnc_weaponShopMenu,"tsf_2lie"];
+this addAction["TSF 1st Lieutenant Weapons",life_fnc_weaponShopMenu,"tsf_1lie"];
+this addAction["TSF Captain Weapons",life_fnc_weaponShopMenu,"tsf_captain"];
+this addAction["TSF Deputy Chief Weapons",life_fnc_weaponShopMenu,"tsf_depch"];
+this addAction["TSF Chief Weapons",life_fnc_weaponShopMenu,"tsf_chief"];
+this setVariable["realname","TSF Supplies"]; 
